@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>It's Me, Annisa Checilia Astuti</h1>
+    <img src="aset/pp.jpeg" width="300" height="400">
+    <nav>
+        <div class="wrp">
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Bio">Biodata</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrp">
+        <section id="Home">
+            <video src="aset/video.mp4" controls></video>
+            <audio src="aset/audioo.mp3" controls></audio>
+            <div class="clm">
+                <h3>HOLIYAYYY</h3>
+            </div>
+        </section>
+
+        <section id="Bio">
+            <title> Biodata </title>
+            <center>
+            <h1>BIODATA</h1>
+            <table border=1>
+                <tr>
+                    <td>Nama </td>
+                    <td>Annisa Checilia Astuti</td>
+                    <td rowspan=8></td>
+                </tr>
+                <tr>
+                    <td>Nim</td>
+                    <td>121140047</td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <td>No. Telepon</td> 
+                    <td>081279204746</td>
+                </tr>
+            </table>
+            </center>
+        </section>
+    </div>
+
+    <div id="contact">
+        <form action="jawaban.php" method="POST">
+            <h2>Contact me</h2>
+            <label for="email">Masukan</label> :
+            <input type="text" placeholder="masukkan teks" id="email">
+            <p>Apakah Kamu suka makan?</p>
+            <input type="radio" name="soal_b"> yoi <br>
+            <input type="radio" name="soal_b"> ngga<br>
+            <h2>apa km punya duit?</h2>
+            <input type="checkbox" name="a" id="a" value="1"> iy <br>
+            <input type="checkbox" name="a" id="a" value="2"> g <br>
+            <input type="checkbox" name="a" id="a" value="3"> no <br>
+            <button type="submit">sumbit</button>
+        </form>
+            
+    </div>
+</body>
+</html>
