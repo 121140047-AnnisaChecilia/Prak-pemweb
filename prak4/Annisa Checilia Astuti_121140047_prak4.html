@@ -1,0 +1,50 @@
+<!-- Annisa Checilia Astuti-121140047-RC -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function jumlahganjil(x) {
+        let bilanganganjil = 0;
+        for (let i = 1; i <= x; i++) {
+            if (i % 2 != 0) {
+                bilanganganjil++;
+            }
+        }
+        return bilanganganjil;
+    }
+    function jumlahgenap(x) {
+        let bilangangenap = 0;
+        for (let i = 1; i <= x; i++) {
+            if (i % 2 == 0) {
+                bilangangenap++;
+            }
+        }
+        return bilangangenap;
+    }
+    let pil = true;
+    while (pil) {
+      let x = prompt("silahkan Input Angka : ");
+
+      let bilanganganjil = jumlahganjil(x);
+      let bilangangenap = jumlahgenap(x);
+
+      alert("Bilangan Ganjil dari Angka yang di inputkan adalah " + bilanganganjil)
+      alert("Bilangan Genap dari Angka yang di inputkan adalah " + bilangangenap);
+
+      let ulang = prompt("Apakah mau lanjut input angka lagi? (iya/ga)");
+      if (ulang == "iya") {
+        pil = true;
+      } 
+      else {
+        break;
+      }
+    }
+    </script>
+</body>
+</html>
